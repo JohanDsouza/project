@@ -1,0 +1,10 @@
+## Loading required package: ggplot2
+library(plotly)
+library(ggplot2)
+myPlot <- plot_ly(economics, x = ~date, y = ~unemploy / pop)
+
+# adding trace (lines) to plotly
+
+# visualisation.
+
+add_trace(myPlot, type = "scatter", mode = "markers+lines")
